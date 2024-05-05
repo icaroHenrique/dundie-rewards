@@ -13,7 +13,7 @@ ipython:
 	@.venv/bin/ipython
 
 test:
-	@.venv/bin/pytest -v -s tests/
+	@.venv/bin/pytest -v -s tests/ integration/
 
 watch:
 	@.venv/bin/ptw
