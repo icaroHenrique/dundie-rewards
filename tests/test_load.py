@@ -1,5 +1,3 @@
-import os
-
 import pytest
 
 from dundie.core import load
