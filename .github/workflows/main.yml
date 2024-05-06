@@ -23,7 +23,13 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: ${{matrix.python-version}}
-    - name: Install Project
+    - name: Install project
       run: pip install '.[test]'
-    - name: Run Tests
-      run: pytest -vv tests integration
+    - name: Run tests
+      run: make testci
+    - name: Publish junit result test ci
+      uses: EnricoMi/publish-unit-test-result-action@v1
+      if: always()
+      with:
+        files: test-result.xml
+        check_name: Test Result (Python ${{matrix.python-version}})
