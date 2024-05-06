@@ -17,7 +17,29 @@ permissions:
   pull-requests: write
 
 jobs:
+  lint:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.11]
+        os: [ubuntu-latest]
+    runs-on: ${{matrix.os}}
+    steps: 
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{matrix.python-version}}
+    - name: Install project
+      run: pip install '.[test]'
+    - name: Look for style errors
+      run: pflake8
+    - name: Check for importing style
+      run: isort --profile=black -m 3 --check --diff dundie tests integration
+    - name: Look for auto format errors
+      run: black --check --diff dundie tests integration
+
   tests:
+    needs: lint
     strategy:
       fail-fast: false
       matrix:
