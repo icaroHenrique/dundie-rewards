@@ -12,7 +12,7 @@
         }
     },
     "balance": {
-        "jim@dundlermifflin.com": 500,
+        "jim@dundlermifflin.com": 430,
         "schrute@dundlermifflin.com": 100
     },
     "movement": {
@@ -21,6 +21,26 @@
                 "date": "2024-05-07T14:38:12.620388",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2024-05-07T20:13:20.941335",
+                "actor": "icaro",
+                "value": 30
+            },
+            {
+                "date": "2024-05-07T20:20:08.759235",
+                "actor": "icaro",
+                "value": -100
+            },
+            {
+                "date": "2024-05-07T20:20:36.952389",
+                "actor": "icaro",
+                "value": -100
+            },
+            {
+                "date": "2024-05-07T20:23:46.747132",
+                "actor": "icaro",
+                "value": 100
             }
         ],
         "schrute@dundlermifflin.com": [
