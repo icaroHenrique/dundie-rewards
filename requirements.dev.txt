@@ -5,10 +5,20 @@ pudb
 pytest-watch
 
 # Code Quality
-black
 flake8
 pyproject-flake8
+black
 isort
+
+# docs
+mkdocs
+
+# build
+wheel
+
+# typing
+mypy
+types-setuptools
 
 # Install project as editable
 -e .
