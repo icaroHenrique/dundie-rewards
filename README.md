@@ -23,9 +23,6 @@ e este mesmo arquivo poderá ser usado para versões futuras. `Nome, Depto, Carg
 
 ## Installation
 
-```py
-pip install seunome-dundie
-```
 
 ```py
 pip install -e `.[dev]`
