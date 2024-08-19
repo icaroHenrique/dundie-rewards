@@ -1,3 +1,5 @@
+(Projeto criado para o curso Python Base da Linux Tips - https://www.linuxtips.io/course/python-base)
+
 # Projeto Dundie Rewards
 
 [![CI](https://github.com/rochacbruno/dundie-rewards/actions/workflows/main.yml/badge.svg)](https://github.com/rochacbruno/dundie-rewards/actions/workflows/main.yml)
